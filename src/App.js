@@ -4,6 +4,7 @@ import { robots } from "./robots";
 import "tachyons";
 import CardContainer from "./components/cardContainer/CardContainer";
 import SearchBar from "./components/searchBar/SearchBar";
+import Scroll from "./components/scroll/Scroll";
 
 export class App extends Component {
   constructor() {
@@ -26,9 +27,11 @@ export class App extends Component {
     });
     return (
       <div className="App tc">
-        <h1 className="grow shadow-hover">Robo Friends</h1>
+        <h1 className="header grow shadow-hover">Robo Friends</h1>
         <SearchBar searchChange={this.onSearchChange} />
-        <CardContainer robots={filteredItems} />
+        <Scroll>
+          <CardContainer robots={filteredItems} />
+        </Scroll>
       </div>
     );
   }

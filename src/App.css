@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Prosto+One&display=swap");
-
-h1 {
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+.App {
   font-family: "Prosto One", cursive;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.header {
+  font-family: "Wallpoet", cursive;
   font-size: 70px;
-  color: aqua;
-  text-shadow: 2px 2px #fff, 6px 6px #437dbf;
+  font-weight: 600;
+  color: rgb(96, 163, 250);
+  text-shadow: 2px 2px #fff, 6px 6px #186ac7;
   letter-spacing: 2px;
+  margin-top: 0;
 }

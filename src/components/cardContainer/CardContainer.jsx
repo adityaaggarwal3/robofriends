@@ -3,7 +3,7 @@ import Card from "../card/Card";
 
 const CardContainer = (props) => {
   return (
-    <div>
+    <div className="bg-light-purple bt bw2">
       {props.robots.map((robot, index) => {
         return (
           <Card
