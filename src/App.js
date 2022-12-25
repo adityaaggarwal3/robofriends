@@ -20,12 +20,13 @@ export class App extends Component {
   };
 
   render() {
-    const filteredItems = this.state.robots.filter((robots) => {
-      return robots.name
-        .toLowerCase()
-        .includes(this.state.searchItem.toLowerCase());
+    const { robots, searchItem } = this.state;
+    const filteredItems = robots.filter((robot) => {
+      return robot.name.toLowerCase().includes(searchItem.toLowerCase());
     });
-    return (
+    return !robots.length ? (
+      <h1 className="tc">Loading...</h1>
+    ) : (
       <div className="App tc">
         <h1 className="header grow shadow-hover">Robo Friends</h1>
         <SearchBar searchChange={this.onSearchChange} />

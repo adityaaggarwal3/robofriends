@@ -8,9 +8,9 @@
 .header {
   font-family: "Wallpoet", cursive;
   font-size: 70px;
-  font-weight: 600;
-  color: rgb(96, 163, 250);
-  text-shadow: 2px 2px #fff, 6px 6px #186ac7;
-  letter-spacing: 2px;
+  font-weight: 700;
+  color: rgb(11, 64, 133);
+  text-shadow: 2px 2px #fff, 8px 8px #186ac7;
+  letter-spacing: 4px;
   margin-top: 0;
 }

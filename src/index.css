@@ -10,7 +10,7 @@ body {
   width: 10px;
 }
 .scroll::-webkit-scrollbar-thumb {
-  background: linear-gradient(#42275a, #734b6d);
+  background: linear-gradient(#450e75, #734b6d);
 }
 .scroll::-webkit-scrollbar-track {
   background: #a463f2;
